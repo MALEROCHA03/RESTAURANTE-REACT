@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import './header/header'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hola desde la rama de juanca</h1>
+      {Header}
     </div>
   );
 }
