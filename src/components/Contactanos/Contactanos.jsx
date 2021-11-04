@@ -1,14 +1,15 @@
 import React from "react";
-import styles from "./Contactanos.module.css"
+import "./Contactanos.module.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
 
 export const Contact = () => {
 
   return (
 
+    <section id="contactenos" class="container featurette-divider">
 
-    <section id="contactenos" class="container">
-
-    <div class={styles.row}>
+    <div class="row img-padding">
 
 
       <div class="col-md-7">
