@@ -1,0 +1,31 @@
+
+.col-md-6{
+  margin-top:  300px;
+}
+
+  .separar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  h1, #margen {
+    margin-top: 20%;
+    font-size: 50px;
+    font-weight: 900;
+    color: #5F3040FF;
+  }
+  
+  #margen {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  
+  }
+  .row {
+    margin: 20px;
+  }
+
+  h2{
+    color: red;
+  }
+
+  
