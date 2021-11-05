@@ -1,198 +1,163 @@
 import React from "react";
 
+import { Row, Col, Container } from 'react-bootstrap';
+import './Nosotros.css';
 
+import imgMain from "../../images/foto4@2x.png"
+import imgPersonal1 from "../../images/personal1@2x.png"
+import imgPersonal2 from "../../images/personal2@2x.png"
+import imgPersonal3 from "../../images/personal3@2x.png"
+
+function PersonalRestaurante(props) {
+
+  return (
+
+    <Col md="4">
+
+      <img src={props.img} alt={props.desc}
+        className="rounded-circle img-fluid img-thumbnail img-padding" width="50%" height="50%" />
+
+      <h2 className="title-person">{props.name}</h2>
+      <p>{props.rol}</p>
+    </Col>
+
+  );
+}
+
+function Lorem() {
+
+  return (
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum, elit sagittis pellentesque
+      posuere, ante dolor laoreet ipsum, vel dignissim tellus diam eu nibh. Ut ultricies lectus felis, nec
+      bibendum ipsum mollis a. In mattis sem quis elementum commodo.</p>
+
+  );
+
+}
+
+function Comentario(props) {
+
+  return (
+
+    <Container>
+
+      <Row>
+
+        <Col md="3">
+
+          <img src={props.img} alt={props.desc} class="rounded-circle img-fluid img-comentario" width="190"
+            height="132" />
+
+        </Col>
+
+        <div class="col-md-7">
+
+          <p className="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
+            vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus
+            eleifend
+            accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum
+            vitae
+            sapien et, semper ultricies ligula.</p>
+          <h2 className="titulo-comentario">{props.name}</h2>
+
+        </div>
+
+      </Row>
+    </Container>
+  );
+}
 
 export const About = () => {
- 
+
   return (
 
     <main>
 
-    <div class="featurette-divider"> </div>
+      <Container id="nosotros">
 
+        <Row>
 
-    <section id="nosotros" class="container">
+          <Col md="6">
 
+            <img src={imgMain} className="img-fluid img-padding" alt="restaurant" width="100%"
+              height="100%" />
 
-      <div class="row">
+          </Col>
 
-        <div class="col-md-6">
+          <Col md="6">
 
-          <img src="../../imagenes/foto4@2x.png" class="img-fluid img-padding" alt="restaurant" width="100%"
-            height="100%"/>
+            <div className="separar">
+              <p className="color-secundario img-padding">Nuestra</p>
 
-        </div>
+              <h2>Historia</h2>
 
-
-        <div class="col-md-6">
-          <div class="separar">
-            <p class="color-secundario img-padding">Nuestra</p>
-            <h2>Historia</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum, elit sagittis pellentesque
-              posuere, ante dolor laoreet ipsum, vel dignissim tellus diam eu nibh. Ut ultricies lectus felis, nec
-              bibendum ipsum mollis a. In mattis sem quis elementum commodo.</p>
-            <p> Duis ac eros vel dolor condimentum tristique
-              vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus eleifend
-              accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum vitae
-              sapien et, semper ultricies ligula. </p>
-            <p> Duis ac eros vel dolor condimentum tristique
-              vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus eleifend
-              accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum vitae
-              sapien et, semper ultricies ligula. </p>
-            <p> Duis ac eros vel dolor condimentum tristique
-              vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus eleifend
-              accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum vitae
-              sapien et, semper ultricies ligula. </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="background-pastel">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="../../images/personal1@2x.png" alt="personal1"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Juan Manuel Gómez B.</h2>
-            <p>Chef Ejecutivo</p>
-          </div>
-          <div class="col-md-4">
-            <img src="../../images/personal2@2x.png" alt="personal2"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Ana Isabel Casallas B.</h2>
-            <p>Chef Pastelera</p>
-          </div>
-          <div class="col-md-4">
-            <img src="../../images/personal3@2x.png" alt="personal3"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Maria Paulina Veloza G.</h2>
-            <p>Administradora</p>
-          </div>
-        </div>
-
-        <div class="row">
-
-
-          <div class="col-md-4">
-            <img src="../../images/personal3@2x.png" alt="personal4"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Laura Isabella Guerrero O.</h2>
-            <p>Chef Pastelera</p>
-          </div>
-          <div class="col-md-4">
-            <img src="../../images/personal2@2x.png" alt="personal5"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Claudia Vanessa Pérez P.</h2>
-            <p>Economista</p>
-          </div>
-          <div class="col-md-4">
-            <img src="../../images/personal1@2x.png" alt="personal6"
-              class="rounded-circle img-fluid img-thumbnail img-padding" width="160" height="102"/>
-            <h2 class="title-person">Luis Mario López V.</h2>
-            <p>Diseñador</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-md-3">
-
-                <img src="../../images/personal1@2x.png" class="rounded-circle img-fluid img-comentario" width="190"
-                  height="132" alt="..." />
-
-              </div>
-
-              <div class="col-md-7">
-
-                <p class="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
-                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus
-                  eleifend
-                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum
-                  vitae
-                  sapien et, semper ultricies ligula. </p>
-                <h2 class="titulo-comentario">Juan Manuel Gómez B.</h2>
-
-              </div>
+              <Lorem />
+              <Lorem />
 
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
 
-              <div class="col-md-3">
+          </Col>
+        </Row>
+      </Container>
 
-                <img src="../../images/personal2@2x.png" class="rounded-circle img-fluid img-comentario" width="190"
-                  height="132" alt="..." />
+      <div className="background-pastel">
 
-              </div>
+        <Container>
 
-              <div class="col-md-7">
+          <Row>
+            <PersonalRestaurante img={imgPersonal1} desc="Personal del restaurante 1" name="Juan Manuel Gómez B." rol="Chef Ejecutivo" />
+            <PersonalRestaurante img={imgPersonal2} desc="Personal del restaurante 2" name="Ana Isabel Casallas B." rol="Chef Pastelera" />
+            <PersonalRestaurante img={imgPersonal3} desc="Personal del restaurante 3" name="Maria Paulina Veloza G." rol="Administradora" />
+          </Row>
 
-                <p class="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
-                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus
-                  eleifend
-                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum
-                  vitae
-                  sapien et, semper ultricies ligula. </p>
-                <h2 class="titulo-comentario">Ana Isabel Casallas B.</h2>
+          <Row>
+            <PersonalRestaurante img={imgPersonal3} desc="Personal del restaurante 4" name="Laura Isabella Guerrero O." rol="Chef Pastelera" />
+            <PersonalRestaurante img={imgPersonal2} desc="Personal del restaurante 5" name="Claudia Vanessa Pérez P." rol="Economista" />
+            <PersonalRestaurante img={imgPersonal1} desc="Personal del restaurante 6" name="Luis Mario López V." rol="Diseñador" />
+          </Row>
 
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-md-3">
-
-                <img src="../../images/personal3@2x.png" class="rounded-circle img-fluid img-comentario" width="190"
-                  height="132" alt="..." />
-
-              </div>
-
-              <div class="col-md-7">
-
-                <p class="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
-                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit mauris. Vivamus
-                  eleifend
-                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus justo, elementum
-                  vitae
-                  sapien et, semper ultricies ligula. </p>
-                <h2 class="titulo-comentario">Maria Paulina Veloza G.</h2>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+        </Container>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-  </main>
+/**Corregir comentarios */
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <Comentario img={imgPersonal1}  desc="Personal del restaurante 1" name="Juan Manuel Gómez B."  />
+          </div>
+
+          <div class="carousel-item">
+       
+            <Comentario img={imgPersonal2}  desc="Personal del restaurante 2" name="Ana Isabel Casallas B." />
+          </div>
+
+          <div class="carousel-item">
+       
+            <Comentario img={imgPersonal3}  desc="Personal del restaurante 3" name="Maria Paulina Veloza G." />
+          </div>
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+        
+      </div>
+
+    </main>
 
   );
 };
