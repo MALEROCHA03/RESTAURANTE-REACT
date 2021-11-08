@@ -120,7 +120,6 @@ export const About = () => {
         </Container>
       </div>
 
-/**Corregir comentarios */
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
