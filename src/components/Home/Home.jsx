@@ -2,6 +2,7 @@ import React from "react";
 import Icon from "./icon-1.png"
 import Icon1 from "./icon-2.png"
 import Comida from "./menu.png"
+import Sal from "./sal.png"
 import "./Home.css";
 export const Inicio = () => {
  
@@ -98,9 +99,9 @@ export const Inicio = () => {
         </div>
         <div class="col row align-items-center mx-auto mt-2">
           <div class="col-12 row text-center mx-auto">
-            <a target="_blank" href="menu.html"> <img src="resources/img/menu@2x.png" alt="" class="w-75 mx-auto mt-5"/>
+            <a target="_blank" href="menu.html"> <img src={Sal} alt="" class="w-75 mx-auto mt-5"/>
             </a>
-            <a href="">
+            <a href="_black">
               <a target="_blank" href="menu.html">
                 <botton type="botton" class="btn btn-orange mt-2">Consultar Menú</botton>
               </a>
