@@ -1,4 +1,7 @@
 import React from "react";
+import "./Contactanos.module.css"
+import "bootstrap/dist/css/bootstrap.min.css"
+
 
 import { Row, Col, Container } from 'react-bootstrap';
 import "./Contactanos.css"

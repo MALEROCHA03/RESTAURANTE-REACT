@@ -12,43 +12,43 @@ export const Header = () => {
   const toggleMenu = () =>{
     setMenu(!menu)
   }
-  
+
   const styleMenu = {
     left: menu ? 0 : "-100%"
   }
   return (
-    <div className={styles.principal}>
-      <header className={styles.header}>
-        <div className={styles.toogle} onClick={toggleMenu}>
-          <GoThreeBars size="45px" />
-        </div>
-        <img className={styles.logo} src={logo} alt="" />
-        <nav className={styles.menu} style={styleMenu}>
-          <ul className={styles.menuList}>
-            <li className={styles.menuItem}>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link to="/nosotros">Nosotros</Link>
-            </li>
-            
-            <li className={styles.menuItem}>
-              <Link to="/menú">Menú</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link to="/servicios">Servicios</Link>
-            </li>
-            <li className={styles.menuItem}>
-              <Link to="/contactanos">Contactanos</Link>
-            </li>
+      <div className={styles.principal}>
+        <header className={styles.header}>
+          <div className={styles.toogle} onClick={toggleMenu}>
+            <GoThreeBars size="45px" />
+          </div>
+          <img className={styles.logo} src={logo} alt="" />
+          <nav className={styles.menu} style={styleMenu}>
+            <ul className={styles.menuList}>
+              <li className={styles.menuItem}>
+                <Link to="/">Inicio</Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link to="/nosotros">Nosotros</Link>
+              </li>
 
-            <li className={styles.menuItem}>
-              <Link to="/reservar">Reservar</Link>
-            </li>
-          </ul>
-        </nav>
-      
-      </header>
-    </div>
+              <li className={styles.menuItem}>
+                <Link to="/menú">Menú</Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link to="/servicios">Servicios</Link>
+              </li>
+              <li className={styles.menuItem}>
+                <Link to="/contactanos">Contactanos</Link>
+              </li>
+
+              <li className={styles.menuItem}>
+                <Link to="/reservar">Reservar</Link>
+              </li>
+            </ul>
+          </nav>
+
+        </header>
+      </div>
   );
 };

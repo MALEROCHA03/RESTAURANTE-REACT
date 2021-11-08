@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,12 +15,13 @@ import { Servicios } from './components/rutas/Servicios';
 import { Nosotros } from './components/rutas/Nosotros';
 import { Reservar } from './components/rutas/Reservar';
 import { Contactanos } from './components/rutas/Contactanos';
+import { Footer } from './components/Footer/Footer';
+
 function App() {
-  
+
 return (
     <Router>
       <div>
-
         <Header/>
         <Switch>
           <Route path="/nosotros" component={Nosotros}/>
@@ -29,12 +31,16 @@ return (
           <Route path="/reservar"component={Reservar}/>
           <Route path="/home" component={Home}/>
             <Home />
-         
+          
+       
 
         </Switch>
-      </div>
+     
+      </div>    
+       <Footer/>
     </Router>
-    
+   
+
   );
 }
 
