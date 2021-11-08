@@ -1,7 +1,7 @@
 import React from "react";
 import "./Menu.css";
 import plato1 from "../../images/menu1@2x.png";
-import ReactDOM from 'react-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 

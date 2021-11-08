@@ -14,26 +14,26 @@ export function Footer() {
             <h2>
               Social</h2>
             <ul className="box">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Pinterest</a></li>
+              <li><>Instagram</></li>
+              <li><>Facebook</></li>
+              <li><>Pinterest</></li>
             </ul>
           </li>
           <li >
             <h2>
               Productos</h2>
             <ul className="box">
-              <li><a href="#">Menú</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Reservas</a></li>
+              <li><>Menú</></li>
+              <li><>Servicios</></li>
+              <li><>Reservas</></li>
 
             </ul>
           </li>
           <li>
             <h2>Contacto</h2>
             <ul className="box">
-              <li><a href="#">+57 31531696</a></li>
-              <li><a href="#">salysalsa@gmail.com</a></li>
+              <li><>+57 31531696</></li>
+              <li><>salysalsa@gmail.com</></li>
 
             </ul>
           </li>
