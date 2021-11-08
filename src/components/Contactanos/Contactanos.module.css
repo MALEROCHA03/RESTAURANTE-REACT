@@ -1,0 +1,243 @@
+.social {
+  background-repeat: no-repeat;
+  position: fixed;
+  /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  right: 0;
+  /* Establecemos la barra en la izquierda */
+  top: 200px;
+  /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000;
+  /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li a {
+  display: inline-block;
+  color: rgb(172, 75, 75);
+  background-color: transparent;
+  padding: 12px 12px;
+  margin-right: 10px;
+
+}
+
+h1.fw-bold {
+  margin-left: 20px;
+}
+
+btn-secondary fs-6 fw-bold {
+  margin-right: -100px;
+}
+
+/* DESKTOP */
+/*Estilos para el contenedor del mapa*/
+#map_lima {
+  width: 100%;
+  height: 200px;
+
+}
+
+.site-footer {
+  background-color: rgb(49, 1, 1, 1);
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.site-footer hr {
+  border-top-color: rgb(177, 149, 149);
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.site-footer a {
+  color: #cabdbd;
+}
+
+.site-footer a:hover {
+  color: #FF3C04FF;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none
+}
+
+.footer-links li {
+  display: block
+}
+
+.footer-links a {
+  color: #dbcbcb
+}
+
+.copyright-text {
+  margin: 0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer .social-icons {
+    text-align: center
+  }
+}
+
+
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600
+  }
+}
+
+.titulo-organizar {
+  font-size: 260%;
+  font-weight: 900;
+  color: #FFF;
+}
+.titulo2-organizar {
+  font-size: 260%;
+  font-weight: 900;
+  color: #FFF;
+}
+.titulo3-organizar {
+  font-size: 150%;
+  color: #110f0f;
+}
+
+.p-organizar {
+  color: #FFF;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #5F3040FF;
+}
+
+.color-secundario {
+  color: #FF3C04FF;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.btn-orange {
+  color: white;
+  background-color: #FF3C04FF;
+}
+
+.img-padding {
+  margin: 20px;
+}
+
+.img-fluid {
+  margin-left: 10%;
+}
+
+.img-comentario {
+  margin-top: 10%;
+}
+
+.separar {
+  margin-left: 20%;
+  margin-bottom: 20%;
+}
+
+.separar-arriba-abajo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.titulo-comentario {
+
+  padding-bottom: 10%;
+  font-size: 20px;
+  color: #5F3040FF;
+  float: right;
+
+}
+
+.parrafo-comentario {
+  padding-left: 5%;
+  padding-top: 5%;
+  font-size: 20px;
+  color: #5F3040FF;
+
+}
+
+.title-person {
+  padding-top: 4%;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.background-pastel {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  background-color: #D5CACEFF;
+}
+
+.background-img {
+  background-image: url("../../images/foto3@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-img-2 {
+  background-image: url("../../images/foto3@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bajar {
+  margin-bottom: 30%;
+}
+
+.btn-redondear {
+  border-radius: 100%;
+  border-color: white;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  padding-top: 5px;
+}
+
+.links-mapa {
+  color: #5F3040FF;
+}
+
+.links-mapa:hover {
+  color: #FF3C04FF;
+  text-decoration: none;
+}
