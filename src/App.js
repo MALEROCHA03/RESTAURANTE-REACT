@@ -1,5 +1,7 @@
 
 import './App.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,12 +17,10 @@ import { Nosotros } from './components/rutas/Nosotros';
 import { Reservar } from './components/rutas/Reservar';
 import { Contactanos } from './components/rutas/Contactanos';
 function App() {
-  
+
 return (
     <Router>
       <div>
-        
-
         <Header/>
         <Switch>
           <Route path="/nosotros" component={Nosotros}/>
@@ -35,11 +35,8 @@ return (
         </Switch>
       </div>
     </Router>
-    
+
   );
 }
-
-
-
 
 export default App;

@@ -1,0 +1,153 @@
+.colorperso{
+    background-color: #310101FF;
+}
+.colorperso2{
+    background-color: #FF3C04FF;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #5F3040FF;
+}
+.añadir{
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-radius:30%;
+    border-width: 0px;
+    font-size: 8pt;
+    text-align: center;
+}
+.añadir:hover{
+    color: blue;
+}
+input.añadir {
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    color: #000;
+    font-size: 10pt;
+}
+
+.añadir2{
+
+    border-radius: 7%;
+    border-width: 0px;
+    width: 50%;
+    background-color: #310101;
+    color: #fff;
+    font-size: 15pt;
+
+}
+.añadir3{
+
+    border-radius: 0%;
+    border-width: 0px;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18pt;
+
+}
+.btn-danger {
+    color: white;
+
+}
+
+.input-group {
+}
+input[type="number"] {
+    text-align: center;
+    -moz-appearance: textfield;
+    width: 12%;
+    border: 2px solid #310101;
+}
+.final {
+    justify-content: flex-end;
+}
+.botones {
+    width: 30px;
+    height: 30px;
+    font-size: 10pt;
+    text-align: center;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #310101;
+    border: 2px solid #310101;
+}
+.cantidad {
+    justify-content: center;
+}
+.borde1 {
+    border-bottom: 2px solid #310101;
+    padding-bottom: 6px;
+}
+@media screen and (min-width: 980px) {
+    .cantidad {
+        justify-content: flex-end;
+    }
+}
+.añadir2:hover{
+    font-weight: bold;
+}
+.maximo {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .añadir {
+        height: 30px;
+        width: 30px;
+        border-radius: 20%;
+        background-color: transparent;
+        border-width: 0px;
+        font-size:13pt;
+    }
+}
+
+.show-cart li {
+    display: flex;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-img-top {
+    width: 200px;
+    height: 200px;
+
+}
+.imagenw {
+    width:100%;
+}
+.borde {
+    border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 576px) {
+    .imagenw {
+        width:70%;
+    }
+}
+.titulo {
+    color: #310101;
+}
+.pequeña {
+    display: block;
+}
+@media screen and (min-width: 920px){
+    .pequeña {
+        display: none;
+    }
+}
+.grande {
+    display: none;
+}
+@media screen and (min-width: 992px){
+    .grande {
+        display: block;
+    }
+}
+.botones2 {
+    background-color: transparent;
+    border: 1px solid #310101;
+    border-radius: 5%;
+}
