@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Reservas = () => {
  
-
+ 
 
   return (
+   
     <section id="reservar" class="container">
       <div class="row ">
         <div class="col-md-7">
@@ -140,5 +141,7 @@ export const Reservas = () => {
         </div>{" "}
       </div>{" "}
     </section>
+    
   );
+  
 };

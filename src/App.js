@@ -1,7 +1,6 @@
 
 import './App.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +15,8 @@ import { Servicios } from './components/rutas/Servicios';
 import { Nosotros } from './components/rutas/Nosotros';
 import { Reservar } from './components/rutas/Reservar';
 import { Contactanos } from './components/rutas/Contactanos';
+import { Footer } from './components/Footer/Footer';
+
 function App() {
 
 return (
@@ -30,11 +31,15 @@ return (
           <Route path="/reservar"component={Reservar}/>
           <Route path="/home" component={Home}/>
             <Home />
-         
+          
+       
 
         </Switch>
-      </div>
+     
+      </div>    
+       <Footer/>
     </Router>
+   
 
   );
 }
