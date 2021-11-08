@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Row, Col, Container } from 'react-bootstrap';
-import './Nosotros.css';
+import './Nosotros.module.css';
 
 import imgMain from "../../images/foto4@2x.png"
 import imgPersonal1 from "../../images/personal1@2x.png"
