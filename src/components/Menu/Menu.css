@@ -55,8 +55,6 @@ input.añadir {
 
 }
 
-.input-group {
-}
 input[type="number"] {
     text-align: center;
     -moz-appearance: textfield;
