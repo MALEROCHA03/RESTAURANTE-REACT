@@ -40,38 +40,42 @@ export const Header = () => {
         <nav className={styles.menu} style={styleMenu}>
           <ul className={styles.menuList}>
             <li className={styles.menuItem}>
-              <Link to="/">Inicio</Link>
+              <Link to="/" className="text-light text-decoration-none" >Inicio</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/nosotros">Nosotros</Link>
+              <Link to="/nosotros" className="text-light text-decoration-none">Nosotros</Link>
             </li>
             
             <li className={styles.menuItem}>
-              <Link to="/menú">Menú</Link>
+              <Link to="/menú" className="text-light text-decoration-none">Menú</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/servicios">Servicios</Link>
+              <Link to="/servicios" className="text-light text-decoration-none">Servicios</Link>
             </li>
             <li className={styles.menuItem}>
-              <Link to="/contactanos">Contactanos</Link>
+              <Link to="/contactanos" className="text-light text-decoration-none">Contactanos</Link>
             </li>
 
             <li className={styles.menuItem}>
-              <Link to="/reservar">Reservar</Link>
+              <Link to="/reservar" className="text-light text-decoration-none">Reservar</Link>
             </li>
             <li>
+
+<div className="ingresar">
+  
 
             {isAuthenticated ?(
               <>
              
               <Perfil/>
-              <button className={styles.ingresar} onClick= {() => logout({ returnTo: window.location.origin } ) }> salir { element } </button>
+              <button className={styles.ingresar} onClick= {() => logout({ returnTo: window.location.origin } ) }> Salir { element } </button>
               
             </>
             ) : (
               <button className={styles.ingresar} onClick={() => loginWithRedirect()}>Login { element } </button>
-            ) }
+              ) }
             
+              </div>
             </li>
           </ul>
         </nav>

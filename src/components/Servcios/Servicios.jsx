@@ -18,10 +18,9 @@ export const Service = () => {
     return (
 
         <div className="container">
-            <div className="row">
-                <div className="col-md-6">
+         
+                <div className="col-md-12">
                     <h1 id="margen">Servicios</h1>
-                    <br/>
                     <p>
                         {" "}
                         ipsum dolor sit amet consectetur, adipisicing elit. Dolore repellat
@@ -33,7 +32,7 @@ export const Service = () => {
                         voluptatum officiis obcaecati. Quis id in accusantium nobis!{" "}
                     </p>
                 </div>
-            </div>
+           
 
             <section id="servicios" className="container">
                 <div className="row">

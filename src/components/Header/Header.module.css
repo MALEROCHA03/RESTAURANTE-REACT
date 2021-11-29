@@ -83,7 +83,16 @@
   }
 
   .ingresar{
+    margin-left: 520px;
+    margin-top: 15px;
     background: transparent;
     border:0px ;
     color: blanchedalmond;
+    justify-content: end;
+    align-items: flex-end;
+    
+  }
+
+  .moverLogin{
+    
   }
