@@ -40,7 +40,7 @@ function Comentario(props) {
 
   return (
 
-    <Container className="my-5">
+    <Container>
 
       <Row>
 
@@ -74,7 +74,7 @@ export const About = () => {
 
     <main>
 
-      <Container className="my-5 container" id="nosotros">
+      <Container id="nosotros">
 
         <Row>
 

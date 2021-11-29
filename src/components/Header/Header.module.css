@@ -80,3 +80,9 @@
       display: none;
     }
   }
+
+  .ingresar{
+    background: transparent;
+    border:0px ;
+    color: blanchedalmond;
+  }

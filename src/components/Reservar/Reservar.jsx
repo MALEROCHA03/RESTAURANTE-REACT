@@ -1,22 +1,34 @@
 
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import emailjs from "emailjs-com"
 
+import "./Reservar.module.css"
 
 export const Reservas = () => {
- 
- 
+  function sendEmail (e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5dpxtmh', 'template_x2axngi', e.target, 'user_9DqcTizEyVBhpwhS3xMUY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
 
   return (
-   
+    
     <section id="reservar" class="container">
       <div class="row ">
-        <div class="col-md-7">
+        <div class="col-md-6">
         <br/>
         <br/>
-          <h2 class="mb-5"> Reservas </h2>
+          <h2 class="mb-6" > Reservas </h2>
           
-          
+          <br/>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce
             interdum, elit sagittis pellentesque posuere, ante dolor laoreet
@@ -32,12 +44,15 @@ export const Reservas = () => {
             et, semper ultricies ligula.
           </p>
         </div>
-        <div class="col-md-5">
-          <form class="img-padding">
+        
+        
+        <div class="col-md-6">
+          <form class="img-padding" onSubmit={sendEmail} >
             <div class="mb-3">
             <br/>
             <br/>
-              <select class="form-control" id="inputService">
+            
+              <select class="form-control" name="servicio">
                 <option disabled selected>
                   Seleccione el servicio
                 </option>
@@ -54,7 +69,7 @@ export const Reservas = () => {
               <input
                 type="text"
                 class="form-control"
-                id="inputName"
+                name="nombre"
                 placeholder="Nombre completo"
                 required
               />
@@ -63,25 +78,25 @@ export const Reservas = () => {
               <input
                 type="email"
                 class="form-control"
-                id="inputEmail"
+                name="cliente"
                 placeholder="Correo electrónico"
                 required
               />
             </div>
             <div class="mb-3">
               <input
-                type="number"
+                type="text"
                 class="form-control"
-                id="inputTelefono"
+                name="telefono"
                 placeholder="Telefono"
                 required
               />
             </div>
             <div class="mb-3">
               <input
-                type="number"
+                type="text"
                 class="form-control"
-                id="inputPersons"
+                name="numero"
                 placeholder="Nº personas"
                 required
               />
@@ -90,9 +105,9 @@ export const Reservas = () => {
               <input
                 type="date"
                 class="form-control"
-                id="inputDate"
+                name="fecha"
                 placeholder="Fecha"
-                onclick="enviar()"
+                
                 required
               />
             </div>
@@ -100,7 +115,7 @@ export const Reservas = () => {
               <input
                 type="time"
                 class="form-control"
-                id="inputTime"
+                name="hora"
                 placeholder="Hora"
                 required
               />
@@ -108,7 +123,7 @@ export const Reservas = () => {
             <div class="mb-3">
               <textarea
                 class="form-control"
-                id="textAreaMessage"
+                name="mensaje"
                 rows="4"
                 placeholder="Indicaciones especiales"
                 required
@@ -131,17 +146,20 @@ export const Reservas = () => {
               <button
                 type="submit"
                 class="btn btn-dark"
-                id="subEmail"
-                onclick=""
+                name="subEmail"                
               >
                 Enviar
               </button>{" "}
             </div>{" "}
+
           </form>{" "}
         </div>{" "}
+        
       </div>{" "}
+      
     </section>
-    
+
+
   );
-  
+
 };
