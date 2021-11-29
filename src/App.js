@@ -15,7 +15,6 @@ import { Servicios } from './components/rutas/Servicios';
 import { Nosotros } from './components/rutas/Nosotros';
 import { Reservar } from './components/rutas/Reservar';
 import { Contactanos } from './components/rutas/Contactanos';
-import { Footer } from './components/Footer/Footer';
 
 function App() {
 
@@ -37,7 +36,7 @@ return (
         </Switch>
      
       </div>    
-       <Footer/>
+      
     </Router>
    
 

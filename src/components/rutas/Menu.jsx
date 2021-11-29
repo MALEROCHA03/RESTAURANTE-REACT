@@ -1,11 +1,12 @@
 import React from 'react'
+import { Servicios } from '../Menu/Servicos'
 
-import {Menus} from '../Menu/Menu'
+
 
 export const Menu = () => {
     return (
         <div>
-            <Menus/>
+            <Servicios/>
         </div>
     )
 }
