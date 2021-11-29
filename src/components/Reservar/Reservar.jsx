@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import emailjs from "emailjs-com"
 
 import "./Reservar.module.css"
+import {Footer} from "../Footer/Footer";
 
 export const Reservas = () => {
   function sendEmail (e) {
@@ -21,7 +22,8 @@ export const Reservas = () => {
 
   return (
     
-    <section id="reservar" class="container">
+    <section id="reservar">
+      <div  className="container">
       <div class="row ">
         <div class="col-md-6">
         <br/>
@@ -154,9 +156,11 @@ export const Reservas = () => {
 
           </form>{" "}
         </div>{" "}
-        
+
+
       </div>{" "}
-      
+      </div>
+      <Footer/>
     </section>
 
 

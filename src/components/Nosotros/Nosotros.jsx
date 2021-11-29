@@ -7,6 +7,10 @@ import imgMain from "../../images/foto4@2x.png"
 import imgPersonal1 from "../../images/personal1@2x.png"
 import imgPersonal2 from "../../images/personal2@2x.png"
 import imgPersonal3 from "../../images/personal3@2x.png"
+import {Footer} from "../Footer/Footer";
+import Img1 from "../../images/personal1@2x.png";
+import Img2 from "../../images/personal2@2x.png";
+import Img3 from "../../images/personal3@2x.png";
 
 function PersonalRestaurante(props) {
 
@@ -120,41 +124,101 @@ export const About = () => {
         </Container>
       </div>
 
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div className="row">
 
-          <div class="carousel-item active">
+              <div className="col-md-3">
 
-            <Comentario img={imgPersonal1}  desc="Personal del restaurante 1" name="Juan Manuel Gómez B."  />
+                <img src={Img1}
+                     className="rounded-circle img-fluid img-comentario" width="190"
+                     height="132" alt="..."/>
+
+              </div>
+
+              <div className="col-md-7">
+
+                <p className="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
+                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit
+                  mauris. Vivamus
+                  eleifend
+                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus
+                  justo, elementum
+                  vitae
+                  sapien et, semper ultricies ligula. </p>
+                <h2 className="titulo-comentario">Juan Manuel Gómez B.</h2>
+
+              </div>
+
+            </div>
           </div>
+          <div className="carousel-item">
+            <div className="row">
 
-          <div class="carousel-item">
-       
-            <Comentario img={imgPersonal2}  desc="Personal del restaurante 2" name="Ana Isabel Casallas B." />
+              <div className="col-md-3">
+
+                <img src={Img2}
+                     className="rounded-circle img-fluid img-comentario" width="190"
+                     height="132" alt="..."/>
+
+              </div>
+
+              <div className="col-md-7">
+
+                <p className="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
+                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit
+                  mauris. Vivamus
+                  eleifend
+                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus
+                  justo, elementum
+                  vitae
+                  sapien et, semper ultricies ligula. </p>
+                <h2 className="titulo-comentario">Ana Isabel Casallas B.</h2>
+
+              </div>
+            </div>
           </div>
+          <div className="carousel-item">
+            <div className="row">
 
-          <div class="carousel-item">
-       
-            <Comentario img={imgPersonal3}  desc="Personal del restaurante 3" name="Maria Paulina Veloza G." />
+              <div className="col-md-3">
+
+                <img src={Img3} className="rounded-circle img-fluid img-comentario" width="190"
+                     height="132" alt="..."/>
+
+              </div>
+
+              <div className="col-md-7">
+
+                <p className="parrafo-comentario">Duis ac eros vel dolor condimentum tristique
+                  vitae sit amet velit. Mauris felis justo, rhoncus a diam at, tempor suscipit
+                  mauris. Vivamus
+                  eleifend
+                  accumsan cursus. Vivamus vehicula est quis vulputate pretium. Pellentesque metus
+                  justo, elementum
+                  vitae
+                  sapien et, semper ultricies ligula. </p>
+                <h2 className="titulo-comentario">Maria Paulina Veloza G.</h2>
+
+              </div>
+
+            </div>
           </div>
-
         </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"/>
+          <span className="visually-hidden">Previous</span>
         </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"/>
+          <span className="visually-hidden">Next</span>
         </button>
-        
       </div>
+
+      <Footer/>
 
     </main>
 

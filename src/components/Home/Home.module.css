@@ -1,110 +1,116 @@
-.titulo-organizar {
+.tituloOrganizar {
+    margin-top: 5%;
+    font-size: 260%;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.titulo2-organizar {
     font-size: 260%;
     font-weight: 900;
     color: #FFF;
-  }
-  .titulo2-organizar {
-    font-size: 260%;
-    font-weight: 900;
-    color: #FFF;
-  }
-  .titulo3-organizar {
+}
+
+.titulo3-organizar {
     font-size: 150%;
     color: #110f0f;
-  }
-  
-  .p-organizar {
+}
+
+.p-organizar {
     color: #FFF;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 50px;
     font-weight: 900;
     color: #5F3040FF;
-  }
-  
-  .color-secundario {
+}
+
+.color-secundario {
     color: #FF3C04FF;
     font-size: 20px;
     font-weight: 700;
-  
-  }
-  
-  .btn-orange {
+
+}
+
+.btn-orange {
     color: white;
     background-color: #FF3C04FF;
-  }
-  
-  .img-padding {
+}
+
+.img-padding {
     margin: 20px;
-  }
-  
-  .img-fluid {
+}
+
+.img-fluid {
     margin-left: 10%;
-  }
-  
-  .img-comentario {
+}
+
+.img-comentario {
     margin-top: 10%;
-  }
-  
-  .separar {
+}
+
+.separar {
     margin-left: 20%;
     margin-bottom: 20%;
-  }
-  
-  .separar-arriba-abajo {
-    margin-top: 2%;
+}
+
+.separarArribaAbajo {
     margin-bottom: 2%;
-  }
-  
-  .titulo-comentario {
-  
+}
+
+.titulo-comentario {
+
     padding-bottom: 10%;
     font-size: 20px;
     color: #5F3040FF;
     float: right;
-  
-  }
-  
-  .parrafo-comentario {
+
+}
+
+.parrafo-comentario {
     padding-left: 5%;
     padding-top: 5%;
     font-size: 20px;
     color: #5F3040FF;
-  
-  }
-  
-  .title-person {
+
+}
+
+.title-person {
     padding-top: 4%;
     font-size: 20px;
     font-weight: 900;
-  }
-  
-  .background-pastel {
+}
+
+.background-pastel {
     padding-top: 2%;
     padding-bottom: 1%;
     background-color: #D5CACEFF;
-  }
-  
-  .background-img {
-    background-image: url("./foto2@2x.png");
+}
+
+.background-img {
+    background-image: url("../../images/foto3@2x.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .background-img-2 {
-    background-image: url("./foto2@2x.png");
+}
+
+.backgroundTwo {
+    background-image: url("../../images/foto2@2x.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .bajar {
+}
+
+.borderRadius {
+    border-radius: 10px;
+}
+
+.bajar {
     margin-bottom: 30%;
-  }
-  
-  .btn-redondear {
+}
+
+.btn-redondear {
     border-radius: 100%;
     border-color: white;
     font-weight: 900;
@@ -112,13 +118,13 @@
     color: white;
     background-color: transparent;
     padding-top: 5px;
-  }
-  
-  .links-mapa {
+}
+
+.links-mapa {
     color: #5F3040FF;
-  }
-  
-  .links-mapa:hover {
+}
+
+.links-mapa:hover {
     color: #FF3C04FF;
     text-decoration: none;
-  }
+}
